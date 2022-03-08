@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>300x600</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="ad.size" content="width=300,height=600">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+
+  <body>
+    <script>var clickTag = "";</script>
+
+
+    <div id="backup" onclick="window.open(window.clickTag || window.clickTAG)"></div>
+    <div id="ad_content" class="invisible">
+
+      <!-- <div id="bg" class="sprite-jpg bg"></div> -->
+      <div id="branding_1" class="sprite-png branding_1"></div>
+      <div id="branding_2" class="sprite-png branding_2"></div>
+
+      <div id="txt_1" class="sprite-svg txt_1"></div>
+      <div id="txt_2" class="sprite-svg txt_2"></div>
+      <div id="txt_3" class="sprite-svg txt_3"></div>
+      <div id="txt_4" class="sprite-svg txt_4"></div>
+      <div id="txt_5" class="sprite-svg txt_5"></div>
+
+
+      <div id="pack_2" class="sprite-png pack_2 invisible"></div>
+      <div id="pack_3" class="sprite-png pack_3 invisible"></div>
+      <div id="pack_1" class="sprite-png pack_1 invisible"></div>
+
+
+
+      <div id="animation"></div>
+
+
+      <div id="cta">
+        <div id="cta_border" class="sprite-svg cta_border"></div>
+        <div id="cta_txt" class="sprite-svg cta_txt"></div>
+      </div>
+
+    </div>
+
+    <!--[if !IE]><!-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
+
+    <script src="bundle.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]>
+    <script>
+        document.getElementById('backup').className = 'backup'; // IE9 or below
+    </script>
+    <![endif]-->
+
+  </body>
+
+</html>

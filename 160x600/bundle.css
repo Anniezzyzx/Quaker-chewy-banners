@@ -1,0 +1,159 @@
+/** Main reset ---------- */
+html, body { padding: 0; margin: 0; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+html { font-size: 1em; }
+
+body { font-size: 100%; }
+
+a img, :link img, :visited img { border: 0; }
+
+*, *:before, *:after { box-sizing: border-box; }
+
+/** Centering utilties ------------------ */
+.center { left: 0; right: 0; margin-left: auto; margin-right: auto; }
+
+.middle { top: 0; bottom: 0; margin-top: auto; margin-bottom: auto; }
+
+.center-middle { left: 0; right: 0; top: 0; bottom: 0; margin: auto; }
+
+.center-trans { left: 50%; transform: translateX(-50%); }
+
+.middle-trans { top: 50%; transform: translateY(-50%); }
+
+.center-middle-trans { left: 50%; top: 50%; transform: translate(-50%, -50%); }
+
+/** Generic utilties ---------------- */
+.alpha-0 { opacity: 0; }
+
+.invisible { visibility: hidden; }
+
+.hide { display: none; }
+
+.offstage { left: -9999px; top: -9999px; }
+
+.anti-alias { font-smooth: always; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.gpu { -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: translateZ(0); }
+
+.line-fix { outline: 1px solid transparent; }
+
+@supports (-moz-appearance: meterbar) { .gpu { transform: translateZ(0) rotate(0.02deg); } }
+
+.transform-reset { transform: none !important; }
+
+/** Main base --------- Generic ad layout file */
+body { background: #707070; }
+
+#ad_content { background: #3E9FD7; font-family: Helvetica, Arial, sans-serif; overflow: hidden; }
+
+#ad_content div, #ad_content img, #ad_content svg { position: absolute; }
+
+.backup { background: url("backup.jpg") -1px -1px no-repeat; background-size: 160px 600px; }
+
+#ad_content, .backup { border: 1px solid black; cursor: pointer; position: absolute; width: 160px; height: 600px; }
+
+/* ---------------------------------------- */
+#branding_1 { top: 31px; left: 107px; }
+
+#branding_2 { top: 63px; left: 116px; }
+
+#txt_1 { top: 126px; left: 45px; }
+
+#txt_1b { top: 126px; left: 39px; }
+
+#txt_2 { top: 156px; left: 39px; }
+
+#txt_3 { top: 185px; left: 39px; }
+
+#txt_4 { top: 217px; left: 48px; }
+
+#txt_5 { top: 236px; left: 44px; }
+
+#txt_6 { top: 256px; left: 35px; }
+
+#txt_7 { top: 148px; left: 19px; }
+
+#txt_8 { top: 180px; left: 31px; }
+
+#pack_1 { bottom: 91px; left: 51px; }
+
+#pack_2 { bottom: 95px; left: 111px; }
+
+#pack_3 { bottom: 95px; left: 0px; }
+
+#cta { bottom: 32px; left: 19px; }
+
+#cta #cta_border { bottom: 0px; left: 0px; }
+
+#cta #cta_txt { bottom: 9px; left: 16px; }
+
+#brand_wrap { top: 0px; left: -80px; }
+
+#animation { background: url("anim.png"); transform: scale(0.55); width: 444px; height: 250px; top: 187px; right: -142px; }
+
+.sprite-png { background-image: url('sprite.png') }
+.sprite-png.branding_1 {
+  width: 104px;
+  height: 77px;
+  background-position: 0px 0px;
+  background-size: 171px 144px; }
+.sprite-png.pack_1 {
+  width: 61px;
+  height: 71px;
+  background-position: -108px 0px;
+  background-size: 171px 144px; }
+.sprite-png.pack_2 {
+  width: 44px;
+  height: 61px;
+  background-position: -57px -81px;
+  background-size: 171px 144px; }
+.sprite-png.pack_3 {
+  width: 52px;
+  height: 60px;
+  background-position: 0px -81px;
+  background-size: 171px 144px; }
+.sprite-svg { background: url('sprite.svg') no-repeat; }
+.sprite-svg.cta_border {
+  background-position: 0 0;
+  width: 122px;
+  height: 35.12px; }
+.sprite-svg.cta_txt {
+  background-position: 99.8445044602668% 0;
+  width: 87.81px;
+  height: 14.31px; }
+.sprite-svg.txt_1 {
+  background-position: 0 99.93507430385223%;
+  width: 68.75px;
+  height: 24.38px; }
+.sprite-svg.txt_1b {
+  background-position: 94.02697495183044% 18.17142857142857%;
+  width: 80.25px;
+  height: 84.25px; }
+.sprite-svg.txt_2 {
+  background-position: 60.653011866072106% 82.23357559185435%;
+  width: 77.69px;
+  height: 24.03px; }
+.sprite-svg.txt_3 {
+  background-position: 0 82.36396396396395%;
+  width: 80.25px;
+  height: 24.25px; }
+.sprite-svg.txt_4 {
+  background-position: 45.77535122178574% 93.89954585508029%;
+  width: 59.81px;
+  height: 15.47px; }
+.sprite-svg.txt_5 {
+  background-position: 87.43639360710958% 66.74793444399296%;
+  width: 70.47px;
+  height: 15.34px; }
+.sprite-svg.txt_6 {
+  background-position: 0 65.95863610955841%;
+  width: 88.03px;
+  height: 19.88px; }
+.sprite-svg.txt_7 {
+  background-position: 0 26.318944844124697%;
+  width: 121.63px;
+  height: 29.56px; }
+.sprite-svg.txt_8 {
+  background-position: 0 48.52941176470588%;
+  width: 96.88px;
+  height: 29.72px; }
